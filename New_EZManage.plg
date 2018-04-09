@@ -1,0 +1,199 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: New_EZManage - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/New_EZManage.res" /d "NDEBUG" /d "_AFXDLL" "C:\working\pcsoft\new_ezmanage\New_EZManage.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\mars" /I "\usb" /I "\fat16" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/New_EZManage.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\working\pcsoft\new_ezmanage\usb\AmdEz3FlashBase.cpp"
+"C:\working\pcsoft\new_ezmanage\mars\blowfish.cpp"
+"C:\working\pcsoft\new_ezmanage\bmp.cpp"
+"C:\working\pcsoft\new_ezmanage\chtfileinfo.cpp"
+"C:\working\pcsoft\new_ezmanage\DirListCtrl.cpp"
+"C:\working\pcsoft\new_ezmanage\DirTreeCtrl.cpp"
+"C:\working\pcsoft\new_ezmanage\DiskCtrl.cpp"
+"C:\working\pcsoft\new_ezmanage\DlgLanguageSelect.cpp"
+"C:\working\pcsoft\new_ezmanage\DlgNandFormat.cpp"
+"C:\working\pcsoft\new_ezmanage\DlgOSSelect.cpp"
+"C:\working\pcsoft\new_ezmanage\fat16\ECC_Check.cpp"
+"C:\working\pcsoft\new_ezmanage\EfaCheat.cpp"
+"C:\working\pcsoft\new_ezmanage\usb\ezflashbase.cpp"
+"C:\working\pcsoft\new_ezmanage\EZListCtrl.cpp"
+"C:\working\pcsoft\new_ezmanage\fileini.cpp"
+"C:\working\pcsoft\new_ezmanage\fat16\FileSys.cpp"
+"C:\working\pcsoft\new_ezmanage\usb\FujiEZ3Flash1g.cpp"
+"C:\working\pcsoft\new_ezmanage\gamenameinfo.cpp"
+"C:\working\pcsoft\new_ezmanage\GB2Big5.cpp"
+"C:\working\pcsoft\new_ezmanage\goldencheat.cpp"
+"C:\working\pcsoft\new_ezmanage\Label.cpp"
+"C:\working\pcsoft\new_ezmanage\Lz77.cpp"
+"C:\working\pcsoft\new_ezmanage\MyOleDropTarget.cpp"
+"C:\working\pcsoft\new_ezmanage\New_EZManage.cpp"
+"C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp"
+"C:\working\pcsoft\new_ezmanage\PageDisk.cpp"
+"C:\working\pcsoft\new_ezmanage\PageFlash.cpp"
+"C:\working\pcsoft\new_ezmanage\RomEditDlg.cpp"
+"C:\working\pcsoft\new_ezmanage\rommanager.cpp"
+"C:\working\pcsoft\new_ezmanage\ScrollLink.cpp"
+"C:\working\pcsoft\new_ezmanage\SortStringArray.cpp"
+"C:\working\pcsoft\new_ezmanage\TextProgressCtrl.cpp"
+"C:\working\pcsoft\new_ezmanage\XCodeFile.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\mars" /I "\usb" /I "\fat16" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/New_EZManage.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\working\pcsoft\new_ezmanage\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D7.bat" with contents
+[
+@echo off
+bin2h arm9_aac.bin
+bin2h arm9_47c.bin
+bin2h arm9_550.bin
+bin2h arm9_aac.bin
+bin2h arm7_erase_ez3.bin
+bin2h arm7_readrom512_ez3.bin
+bin2h arm7_readsaver_ez3.bin
+bin2h arm7_verify_ez3.bin
+bin2h arm7_writesaver_ez3.bin
+bin2h arm9_thumb.bin
+bin2h arm9_47c_thumb.bin
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D7.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AmdEz3FlashBase.cpp
+blowfish.cpp
+bmp.cpp
+chtfileinfo.cpp
+DirListCtrl.cpp
+DirTreeCtrl.cpp
+DiskCtrl.cpp
+DlgLanguageSelect.cpp
+DlgNandFormat.cpp
+DlgOSSelect.cpp
+Automatically linking with SkinPlusPlusDLL.dll
+ECC_Check.cpp
+EfaCheat.cpp
+ezflashbase.cpp
+C:\working\pcsoft\new_ezmanage\usb\ezflashbase.cpp(375) : warning C4018: '<' : signed/unsigned mismatch
+EZListCtrl.cpp
+fileini.cpp
+FileSys.cpp
+C:\working\pcsoft\new_ezmanage\fat16\FileSys.cpp(339) : warning C4244: 'argument' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\fat16\FileSys.cpp(457) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\fat16\FileSys.cpp(487) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\fat16\FileSys.cpp(424) : warning C4101: 'j' : unreferenced local variable
+C:\working\pcsoft\new_ezmanage\fat16\FileSys.cpp(1136) : warning C4018: '==' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\fat16\FileSys.cpp(1168) : warning C4018: '==' : signed/unsigned mismatch
+FujiEZ3Flash1g.cpp
+gamenameinfo.cpp
+GB2Big5.cpp
+goldencheat.cpp
+Generating Code...
+Compiling...
+Label.cpp
+Lz77.cpp
+C:\working\pcsoft\new_ezmanage\Lz77.cpp(225) : warning C4018: '<' : signed/unsigned mismatch
+MyOleDropTarget.cpp
+New_EZManage.cpp
+New_EZManageDlg.cpp
+Automatically linking with SkinPlusPlusDLL.dll
+Automatically linking with SkinPlusPlusDLL.dll
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(709) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(1471) : warning C4244: 'argument' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(1617) : warning C4244: 'argument' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(2452) : warning C4244: 'argument' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(2984) : warning C4244: 'argument' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(3074) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(3103) : warning C4018: '==' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(3124) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4167) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4195) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4297) : warning C4244: 'argument' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4391) : warning C4244: 'argument' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4467) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4525) : warning C4244: '=' : conversion from 'unsigned long' to 'short', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4973) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(4982) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(5057) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\working\pcsoft\new_ezmanage\New_EZManageDlg.cpp(5065) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+PageDisk.cpp
+PageFlash.cpp
+Automatically linking with SkinPlusPlusDLL.dll
+RomEditDlg.cpp
+C:\working\pcsoft\new_ezmanage\RomEditDlg.cpp(461) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+C:\working\pcsoft\new_ezmanage\RomEditDlg.cpp(487) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+C:\working\pcsoft\new_ezmanage\RomEditDlg.cpp(501) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+C:\working\pcsoft\new_ezmanage\RomEditDlg.cpp(572) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\working\pcsoft\new_ezmanage\RomEditDlg.cpp(573) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned short', possible loss of data
+rommanager.cpp
+C:\working\pcsoft\new_ezmanage\rommanager.cpp(938) : warning C4018: '<' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\rommanager.cpp(1944) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+C:\working\pcsoft\new_ezmanage\rommanager.cpp(2555) : warning C4018: '==' : signed/unsigned mismatch
+C:\working\pcsoft\new_ezmanage\rommanager.cpp(1835) : warning C4101: 'dw7readrom' : unreferenced local variable
+ScrollLink.cpp
+SortStringArray.cpp
+TextProgressCtrl.cpp
+XCodeFile.cpp
+Generating Code...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D8.tmp" with contents
+[
+zlib.lib unrar.lib ResCvt.lib Version.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/New_EZManage.pdb" /machine:I386 /out:"Release/New_EZManage.exe" /libpath:".\lib" 
+.\Release\AmdEz3FlashBase.obj
+.\Release\blowfish.obj
+.\Release\bmp.obj
+.\Release\chtfileinfo.obj
+.\Release\DirListCtrl.obj
+.\Release\DirTreeCtrl.obj
+.\Release\DiskCtrl.obj
+.\Release\DlgLanguageSelect.obj
+.\Release\DlgNandFormat.obj
+.\Release\DlgOSSelect.obj
+.\Release\ECC_Check.obj
+.\Release\EfaCheat.obj
+.\Release\ezflashbase.obj
+.\Release\EZListCtrl.obj
+.\Release\fileini.obj
+.\Release\FileSys.obj
+.\Release\FujiEZ3Flash1g.obj
+.\Release\gamenameinfo.obj
+.\Release\GB2Big5.obj
+.\Release\goldencheat.obj
+.\Release\Label.obj
+.\Release\Lz77.obj
+.\Release\MyOleDropTarget.obj
+.\Release\New_EZManage.obj
+.\Release\New_EZManageDlg.obj
+.\Release\PageDisk.obj
+.\Release\PageFlash.obj
+.\Release\RomEditDlg.obj
+.\Release\rommanager.obj
+.\Release\ScrollLink.obj
+.\Release\SortStringArray.obj
+.\Release\StdAfx.obj
+.\Release\TextProgressCtrl.obj
+.\Release\XCodeFile.obj
+.\Release\New_EZManage.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D8.tmp"
+Genheader
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+New_EZManage.exe - 0 error(s), 35 warning(s)
+</pre>
+</body>
+</html>

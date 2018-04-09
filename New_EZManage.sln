@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "New_EZManage", "New_EZManage.vcxproj", "{7C5C8BD3-6C42-7B91-3513-2B434D73D215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C5C8BD3-6C42-7B91-3513-2B434D73D215}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C5C8BD3-6C42-7B91-3513-2B434D73D215}.Debug|Win32.Build.0 = Debug|Win32
+		{7C5C8BD3-6C42-7B91-3513-2B434D73D215}.Release|Win32.ActiveCfg = Release|Win32
+		{7C5C8BD3-6C42-7B91-3513-2B434D73D215}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>\inc;\mars;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\New_EZManage.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command>bin2h arm9_aac.bin
+bin2h arm9_47c.bin
+bin2h arm9_550.bin
+bin2h arm9_aac.bin
+bin2h arm7_erase_ez3.bin
+bin2h arm7_readrom512_ez3.bin
+bin2h arm7_readsaver_ez3.bin
+bin2h arm7_verify_ez3.bin
+bin2h arm7_writesaver_ez3.bin
+bin2h arm9_thumb.bin
+bin2h arm9_47c_thumb.bin
+bin2h arm9_readcard2.bin
+bin2h arm7_thumb_erase_ez3.bin
+bin2h arm7_thumb_verify_ez3.bin
+bin2h arm7_thumb_writesaver_ez3.bin
+bin2h arm7_thumb_readsaver_ez3.bin</Command>
+      <Message>Genheader</Message>
+    </PreLinkEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\New_EZManage.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\New_EZManage.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\New_EZManage.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;unrar.lib;rescvt.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>\mars;\usb;\fat16;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\New_EZManage.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command>bin2h arm9_aac.bin
+bin2h arm9_47c.bin
+bin2h arm9_550.bin
+bin2h arm9_aac.bin
+bin2h arm7_erase_ez3.bin
+bin2h arm7_readrom512_ez3.bin
+bin2h arm7_readsaver_ez3.bin
+bin2h arm7_verify_ez3.bin
+bin2h arm7_writesaver_ez3.bin
+bin2h arm9_thumb.bin
+bin2h arm9_47c_thumb.bin</Command>
+      <Message>Genheader</Message>
+    </PreLinkEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\New_EZManage.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\New_EZManage.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\New_EZManage.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;unrar.lib;ResCvt.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="usb\AmdEz3FlashBase.cpp" />
+    <ClCompile Include="mars\blowfish.cpp" />
+    <ClCompile Include="bmp.cpp" />
+    <ClCompile Include="chtfileinfo.cpp" />
+    <ClCompile Include="DirListCtrl.cpp" />
+    <ClCompile Include="DirTreeCtrl.cpp" />
+    <ClCompile Include="DiskCtrl.cpp" />
+    <ClCompile Include="DlgLanguageSelect.cpp" />
+    <ClCompile Include="DlgNandFormat.cpp" />
+    <ClCompile Include="DlgOSSelect.cpp" />
+    <ClCompile Include="fat16\ECC_Check.cpp" />
+    <ClCompile Include="EfaCheat.cpp" />
+    <ClCompile Include="usb\ezflashbase.cpp" />
+    <ClCompile Include="EZListCtrl.cpp" />
+    <ClCompile Include="fileini.cpp" />
+    <ClCompile Include="fat16\FileSys.cpp" />
+    <ClCompile Include="usb\FujiEZ3Flash1g.cpp" />
+    <ClCompile Include="gamenameinfo.cpp" />
+    <ClCompile Include="GB2Big5.cpp" />
+    <ClCompile Include="goldencheat.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="Lz77.cpp" />
+    <ClCompile Include="MyOleDropTarget.cpp" />
+    <ClCompile Include="New_EZManage.cpp" />
+    <ClCompile Include="New_EZManageDlg.cpp" />
+    <ClCompile Include="PageDisk.cpp" />
+    <ClCompile Include="PageFlash.cpp" />
+    <ClCompile Include="RomEditDlg.cpp" />
+    <ClCompile Include="rommanager.cpp" />
+    <ClCompile Include="ScrollLink.cpp" />
+    <ClCompile Include="SortStringArray.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TextProgressCtrl.cpp" />
+    <ClCompile Include="XCodeFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="New_EZManage.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="usb\AmdEz3FlashBase.h" />
+    <ClInclude Include="big5_10.h" />
+    <ClInclude Include="mars\blowfish.h" />
+    <ClInclude Include="bmp.h" />
+    <ClInclude Include="chtfileinfo.h" />
+    <ClInclude Include="DirListCtrl.h" />
+    <ClInclude Include="DirTreeCtrl.h" />
+    <ClInclude Include="DiskCtrl.h" />
+    <ClInclude Include="DlgLanguageSelect.h" />
+    <ClInclude Include="DlgNandFormat.h" />
+    <ClInclude Include="DlgOSSelect.h" />
+    <ClInclude Include="fat16\ECC_Check.h" />
+    <ClInclude Include="EfaCheat.h" />
+    <ClInclude Include="usb\ezflashbase.h" />
+    <ClInclude Include="EZListCtrl.h" />
+    <ClInclude Include="usb\ezusbsys.h" />
+    <ClInclude Include="fat16\fathead.h" />
+    <ClInclude Include="fileini.h" />
+    <ClInclude Include="fat16\FileSys.h" />
+    <ClInclude Include="usb\FujiEZ3Flash1g.h" />
+    <ClInclude Include="gamenameinfo.h" />
+    <ClInclude Include="GB2Big5.h" />
+    <ClInclude Include="gb_10.h" />
+    <ClInclude Include="goldencheat.h" />
+    <ClInclude Include="instance.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="Lz77.h" />
+    <ClInclude Include="MyOleDropTarget.h" />
+    <ClInclude Include="New_EZManage.h" />
+    <ClInclude Include="New_EZManageDlg.h" />
+    <ClInclude Include="out.h" />
+    <ClInclude Include="PageDisk.h" />
+    <ClInclude Include="PageFlash.h" />
+    <ClInclude Include="usb\patch.h" />
+    <ClInclude Include="ResCvt.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RomEditDlg.h" />
+    <ClInclude Include="rommanager.h" />
+    <ClInclude Include="ScrollLink.h" />
+    <ClInclude Include="SortStringArray.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TextProgressCtrl.h" />
+    <ClInclude Include="XCodeFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="arm9_47c.bin">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="arm9_550.bin">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="arm9_aac.bin">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\icon1.ico" />
+    <CustomBuild Include="res\listctrl.bmp" />
+    <CustomBuild Include="res\New_EZManage.ico" />
+    <CustomBuild Include="res\New_EZManage.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\toolbar1.bmp" />
+    <CustomBuild Include="langdata\china-simple.ini">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="dada - final.ssk">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="langdata\English.ini">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
